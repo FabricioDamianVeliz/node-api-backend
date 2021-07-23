@@ -1,0 +1,27 @@
+POST http://localhost:3001/api/notes 
+Content-Type : application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZjRiODg0ZDZlMzRlMWExNDQ3MjJlZSIsInVzZXJuYW1lIjoiTWNMb3ZpbiIsImlhdCI6MTYyNjc1MDc5OSwiZXhwIjoxNjI3MzU1NTk5fQ.O5ttwN07KSzdZV9KsVRhJxKMJeO7xKUKT17EIao6j
+
+{
+    "content" : "Utilizando el middleware del user extractor",
+    "important" : true
+}
+
+###
+
+POST http://localhost:3001/api/notes 
+Content-Type : application/json
+
+{
+    "content" : "Esto es una nueva nota",
+    "important" : true,
+    "userId" : "60f4b884d6e34e1a144722ee"
+}
+
+###
+
+POST http://localhost:3001/api/notes 
+Content-Type : application/json
+
+{
+}
